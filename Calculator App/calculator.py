@@ -1,36 +1,60 @@
-run_again = True 
-# the outer while loop will keep running untill the run_again = False
-while run_again:
-    num1 = int(input("Enter first no: ")) #getting numbers from user
-    num2 = int(input("Enter second no: "))
+#Calculator App
 
-    try_again = True #while try_again is true inner loop will keep running
-    while try_again:
-        operator = input("Enter operation (+ - * /): ") #telling user what operation to perform
-        print(" ") #line space for better UI
+# Infinite loop to keep the calculator running until the user decides to exit
+while True: 
+    try: 
+        # Prompt user to input two numbers
+        num1 = int(input("Enter first no: ")) 
+        num2 = int(input("Enter second no: "))
+    except ValueError: 
+        # If input is not a valid number, display error and restart loop
+        print("Invalid input. Please enter numbers only.")
+        print("") # Add a newline for better readability
+        continue # Restart the outer loop
+
+    # Inner loop to prompt for operator until a valid one is entered
+    while True:
         
-        #performing operation choosen by user
+        operator = input("Enter operation (+ - * /): ") 
+        print(" ") 
+        
+        # Addition
         if operator == "+":
-            print(f"{num1} + {num2} = {num1 + num2}")
-            try_again = False #breaking the while loop after successfull operation
+            result = num1 + num2
+            print(f"{num1} + {num2} = {result}")
+            break # Break the operator loop to return to outer loop
+        
+        # Subtraction
         elif operator == "-":
-            print(f"{num1} - {num2} = {num1 - num2}")
-            try_again = False
-        elif operator == "*":
-            print(f"{num1} x {num2} = {num1 * num2}")
-            try_again = False
-        elif operator == "/":
-            print(f"{num1} / {num2} = {num1 / num2}")
-            try_again = False
-        else: #will run if none of the above operator is choosen
-            print("Enter a valid operation") 
-            # giving user another chance of choosing valid operation as try_again is still True
+            result = num1 - num2
+            print(f"{num1} - {num2} = {result}")
+            break
 
+        # Multiplication
+        elif operator == "*":
+            result = num1 * num2
+            print(f"{num1} x {num2} = {result}")
+            break
+        
+        # Division
+        elif operator == "/":
+            if num2 != 0: # Prevent division by zero
+                result = num1 / num2
+                print(f"{num1} / {num2} = {result}")
+                break  
+            else:
+                print("Division by zero is not allowed")
+
+        # Invalid operator input      
+        else: 
+            print("Enter a valid operation") 
+            
+    # Ask user if they want to perform another calculation
     print(" ")
-    #telling user to continue or not
     choice = input("Do you want to calculate again Y/N: ").lower()
+
+    # Exit condition
     if choice == "n":
-        run_again = False #breaking the outer loop as per user's choice
         print("Good Bye!")
         print(" ")
-    #the outer loop will run again if user's choice is 'y'
+        break 
