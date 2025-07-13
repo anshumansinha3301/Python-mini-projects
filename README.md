@@ -30,44 +30,67 @@ cd Python-mini-projects
 
 ## 🤝 How to Contribute
 
-### 1. Fork the Repository
+<details>
+<summary>1. Fork the Repository</summary>
+<br/>
+  
 ```bash
 # Click "Fork" button at top-right of this repo
 # (Creates your copy at github.com/your-github-username/Python-mini-projects)
 ```
 
 <img width="1580" height="392" alt="fork-button" src="https://github.com/user-attachments/assets/0f45b96b-4230-435d-a424-33eecfd0ae78" />
+</details>
 
+<details>
+<summary>2. Clone Your Fork</summary>
 <br/>
-
-### 2. Clone Your Fork
+  
 ```bash
 git clone https://github.com/your-github-username/Python-mini-projects.git
 cd Python-mini-projects
 ```
 
-> [!WARNING]
-> Replace \<your-github-username\>!
+> ⚠️ Replace \<your-github-username\>!
 
-### 3. Set Upstream Sync
+</details>
+
+<details>
+<summary>3. Set Upstream Sync</summary> 
+<br/>
+  
 ```bash
 git remote add upstream https://github.com/mudasirfayaz/Python-mini-projects.git
 ```
+</details>
 
-### 4. Create a Feature Branch
+<details>
+<summary>4. Create a Feature Branch</summary>
+<br/>
+  
 ```bash
 git checkout -b <branch-name>
 ```
 
-### 5. Make and Test Your Changes
+</details>
+
+<details>
+<summary>5. Make and Test Your Changes</summary>
+<br/>
+
 * Add new projects or improve existing ones
 * Test your code locally
 
-### 6. Commit and Push
+</details>
+
+<details>
+<summary>6. Commit and Push</summary>
+<br/>
+  
 Add the changes with `git add`, `git commit`:
 
 ```bash
-git add -A
+git add .
 git commit -m "<your message>"
 ```
 
@@ -77,8 +100,12 @@ Push the code _to your repository_.
 git push origin <branch-name>
 ```
 
-### 7. Open a Pull Request
+</details>
 
+<details>
+<summary>7. Open a Pull Request</summary>
+<br/>
+  
 <img width="1336" height="580" alt="pr-request" src="https://github.com/user-attachments/assets/071fa89b-fb29-4afe-8662-7e944e7ad7a8" />
 
 * Go to your fork on GitHub
@@ -87,12 +114,14 @@ git push origin <branch-name>
 
 <br/>
 
-> [!TIP]
-> Run this before pushing to sync with main repo:
+> Pro tip: Run this before pushing to sync with main repo:
 
 ```bash
 git pull upstream main
 ```
+
+</details>
+
 <br/>
 
 ## 💡Contribution Ideas:
