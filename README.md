@@ -56,7 +56,7 @@ cd Python-mini-projects
 </details>
 
 <details>
-<summary>3. Set Upstream Sync</summary>
+<summary>3. Set Upstream Sync</summary> 
 <br/>
   
 ```bash
