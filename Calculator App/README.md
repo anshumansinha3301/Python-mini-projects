@@ -20,7 +20,7 @@ A clean, interactive, and beginner-friendly command-line calculator built in Pyt
 
 ## 🛠️ Technologies Used
 
-- Python 3.x
+- Python 3.13.3
 - Standard Libraries:
   - `operator` — for mapping arithmetic operators to functions
 
@@ -31,8 +31,8 @@ A clean, interactive, and beginner-friendly command-line calculator built in Pyt
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/mudasirfayaz/Python-mini-projects.git
+   cd .\Python-mini-projects\"Calculator App"
    ```
 
 2. **Run the script:**
@@ -84,4 +84,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## 🧑‍💻 Author
 
-[Musdasir Fayaz] (https://github.com/mudasirfayaz)
+[Mudasir Fayaz](https://github.com/mudasirfayaz/)
+
+Student | Tech Enthusiast | Lifelong Learner
+
+“Building fun and useful Python tools”
